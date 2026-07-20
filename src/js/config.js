@@ -11,7 +11,7 @@ const CONFIG = {
   avatar: { type: "image", src: "src/assets/pfp.png" },
   bio: {
     typewriter: true,
-    texts: ["hi, im fishce", "connect with me", "digital creator", "fishce"],
+    texts: ["好きです"],
     staticBio: "fishce",
     typeSpeed: 80,
     deleteSpeed: 50,
