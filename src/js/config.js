@@ -24,6 +24,7 @@ const CONFIG = {
     { url: "https://www.threads.com/@fishce_", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/2db87780-3939-4c4c-a86f-86b069e69e18.webp", color: "#ffffff" },
     { url: "https://www.facebook.com/not.asuwaa", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/6ee3bfba-f672-41d5-9cb6-4c4b2fecc489.webp", color: "#dddddd" },
     { url: "https://www.instagram.com/fishce_", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/a6816e4c-052e-4f28-92f3-66396b2ca4f8.gif", color: "#ffffff" },
+    { url: "https://zypage.com/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/6ee3bfba-f672-41d5-9cb6-4c4b2fecc489.webp", color: "#dddddd" },
   ],
   audio: {
     src: "",
