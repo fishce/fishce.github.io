@@ -8,7 +8,7 @@ const CONFIG = {
     fontWeight: "500",
     color: "",
   },
-  avatar: { type: "icon" },
+  avatar: { type: "image", src: "src/assets/pfp.png" },
   bio: {
     typewriter: true,
     texts: ["welcome to my page", "fishce", "link in bio", "vibe"],
@@ -20,9 +20,10 @@ const CONFIG = {
   joinedDate: "Joined recently",
   badges: ["premium", "verified"],
   links: [
-    { url: "https://github.com/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/2db87780-3939-4c4c-a86f-86b069e69e18.webp", color: "#ffffff" },
-    { url: "https://twitter.com/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/9d2293f2-2100-4a61-a2e6-dadfccac84f3.webp", color: "#ffffff" },
-    { url: "https://discord.gg/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/6ee3bfba-f672-41d5-9cb6-4c4b2fecc489.webp", color: "#dddddd" },
+    { url: "https://www.tiktok.com/@fishceee", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/9d2293f2-2100-4a61-a2e6-dadfccac84f3.webp", color: "#ffffff" },
+    { url: "https://www.threads.com/@fishce_", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/2db87780-3939-4c4c-a86f-86b069e69e18.webp", color: "#ffffff" },
+    { url: "https://www.facebook.com/not.asuwaa", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/6ee3bfba-f672-41d5-9cb6-4c4b2fecc489.webp", color: "#dddddd" },
+    { url: "https://www.instagram.com/fishce_", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/a6816e4c-052e-4f28-92f3-66396b2ca4f8.gif", color: "#ffffff" },
   ],
   audio: {
     src: "",
