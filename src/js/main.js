@@ -408,7 +408,7 @@
   html += '<span class="tip-content" style="--tooltip-max-width:260px;top:0;left:0;border-color:#1a1a1a33;background-color:#14141463;" data-visible="false" data-placement="top">UID ' + CONFIG.uid + "</span></span>";
   html += renderBadges() + "</div>";
   html += '<h3 style="font-weight:570;font-size:17px;margin:0"><div class="Typewriter"><span class="Typewriter__wrapper" id="bioText"></span><span class="Typewriter__cursor">|</span></div></h3>';
-  html += '<h2 style="font-weight:400;font-size:13px;margin:0;color:var(--joinStatus)">' + CONFIG.joinedDate + "</h2>";
+  if (CONFIG.joinedDate) html += '<h2 style="font-weight:400;font-size:13px;margin:0;color:var(--joinStatus)">' + CONFIG.joinedDate + "</h2>";
   html += renderLocation() + "</div></div>";
   html += '<div class="divider"><div class="divider-inner"></div></div>';
   html += '<div class="links-section" style="margin-bottom:10px"><div class="links-row" style="justify-content:center">' + renderLinks() + "</div></div>";
