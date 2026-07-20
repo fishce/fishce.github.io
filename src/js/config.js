@@ -68,7 +68,7 @@ const CONFIG = {
   equalizer: { enabled: false },
   avatarWave: { enabled: false },
   progressBar: { height: 3, radius: 15, color: "#ffffff", bgColor: "rgba(255,255,255,0.3)", thumbSize: 10, gradient: [] },
-  background: { src: "", color: "#0a0a0a", effects: { aurora: true, dither: false, plasma: false, snow: false, rain: false, stars: true, fireflies: false } },
+  background: { src: "src/assets/background.mp4", color: "#0a0a0a", effects: { aurora: false, dither: false, plasma: false, snow: false, rain: false, stars: false, fireflies: false } },
 };
 
 const BADGE_SVGS = {

@@ -397,8 +397,14 @@
     CONFIG.views = stored;
   })();
 
-  var bgStyle = CONFIG.background.src ? 'background-image:url("' + CONFIG.background.src + '")' : "";
-  var html = '<div class="bg-image" style="' + bgStyle + '"></div><div class="bg-color" style="background-color:' + CONFIG.background.color + '"></div>';
+  var isVideo = CONFIG.background.src && /\.(mp4|webm|ogg)$/i.test(CONFIG.background.src);
+  var html;
+  if (isVideo) {
+    html = '<video class="bg-image" src="' + CONFIG.background.src + '" autoplay muted loop playsinline style="object-fit:cover"></video><div class="bg-color" style="background-color:' + CONFIG.background.color + '"></div>';
+  } else {
+    var bgStyle = CONFIG.background.src ? 'background-image:url("' + CONFIG.background.src + '")' : "";
+    html = '<div class="bg-image" style="' + bgStyle + '"></div><div class="bg-color" style="background-color:' + CONFIG.background.color + '"></div>';
+  }
 
   if (CONFIG.audio.src) html += '<audio id="bgAudio" src="' + CONFIG.audio.src + '"' + (CONFIG.audio.loop ? " loop" : "") + ' preload="none"></audio>';
 
