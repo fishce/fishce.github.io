@@ -1,0 +1,79 @@
+@font-face{font-family:'Satoshi';src:url('https://fonts.cdnfonts.com/css/satoshi') format('woff2');font-weight:300 900;font-display:swap;font-style:normal}
+body{overflow-x:hidden;margin:0;padding:0;background-color:#0a0a0a;color:#fff}
+body,button,input,textarea{font-family:'Satoshi',sans-serif}
+html{color-scheme:dark!important}
+body,html{height:100%}
+body{min-height:100%}
+::selection{color:#09090b;background:#eeeeee}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{border-radius:5px;background:#181818}
+
+.splash{-webkit-user-select:none;user-select:none;display:flex;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:100%;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);background-color:rgba(0,0,0,.775);z-index:9999;transition:.75s ease}
+.splash.overlay-hide{opacity:0}
+.splash-text{color:#fafafa;text-align:center;padding:0 10px}
+
+.bg-image{position:fixed;height:100%;width:100%;background-size:cover;background-position:50%;z-index:-1}
+.bg-color{height:100%;width:100%;z-index:-2;position:fixed}
+
+.page-wrap{position:relative;min-height:100vh;width:100%;background-size:cover;background-position:50%}
+.content-wrap{display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:100vh;width:100%;gap:10px;padding:50px 15px;box-sizing:border-box}
+
+.card{padding:var(--containerPadding);width:100%;max-width:var(--containerWidth);border-radius:var(--containerRadius);background-color:var(--containerColor);-webkit-backdrop-filter:blur(var(--containerBlur));backdrop-filter:blur(var(--containerBlur));border:var(--containerBorder);pointer-events:none;box-sizing:border-box;transition:opacity 1s,margin-bottom .6s;opacity:0;margin-bottom:-100px}
+.card.card-show{opacity:1!important;margin-bottom:0!important;pointer-events:all!important}
+
+.text-col-2{display:block;position:absolute;inset:0;border-radius:inherit;padding:var(--profileBorderWidth);pointer-events:none;z-index:2;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.text-col-4{background:color-mix(in srgb,var(--profileBorderColor) 78%,transparent);filter:drop-shadow(0 0 4px color-mix(in srgb,var(--profileBorderColor) 24%,transparent));opacity:.72;animation:anim-pulse-1 4.8s ease-in-out infinite}
+@keyframes anim-pulse-1{0%,to{opacity:.58;filter:drop-shadow(0 0 4px color-mix(in srgb,var(--profileBorderColor) 18%,transparent)) drop-shadow(0 0 10px color-mix(in srgb,var(--profileBorderColor) 10%,transparent))}48%{opacity:1;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--profileBorderColor) 38%,transparent)) drop-shadow(0 0 18px color-mix(in srgb,var(--profileBorderColor) 22%,transparent))}}
+
+.profile-row{display:flex;align-items:center;gap:14px;margin-top:-10px;padding-top:10px}
+.avatar-img{height:120px;width:120px;min-width:120px;object-fit:cover;border-radius:50%}
+.text-col{display:flex;flex-direction:column;gap:3px}
+.text-col h1,.text-col h2,.text-col h3,.username-span{margin:0}
+.text-col h1,.text-col h3,.username-span,.subtext{color:var(--textColor)}
+.text-col h2{color:var(--joinStatus)}
+.avatar{font-size:5em;color:var(--textColor);margin-right:10px;height:110px;display:flex;align-items:center}
+
+.header-row{flex-wrap:wrap;display:flex;align-items:center}
+.header-row h1,.username-span,.subtext{text-shadow:var(--colorUsernameGlow);width:fit-content;background-image:var(--usernameEffects)}
+
+.badge{display:inline-flex;padding:6px 10px;border-radius:25px;gap:5.5px;align-items:center;justify-content:center;border:var(--badgeContainerBorder);background-color:var(--badgeContainerBackground)}
+.badge-icon{display:flex;position:relative}
+.badge svg{font-size:var(--userBadge)}
+.badge-el-5{display:flex;position:relative}
+
+.links-section{padding:0 15px;margin-bottom:13px}
+.links-row{margin-top:30px;display:flex;width:100%;justify-content:center;align-items:center;flex-wrap:wrap;gap:9px;row-gap:11px}
+.link-btn{display:flex}
+.link-btn svg{font-size:35px;transition:.3s}
+.link-btn svg:hover{transform:scale(1.1)}
+.link-btn a{display:flex}
+.link-icon{height:40px;width:40px;object-fit:cover;transition:.3s}
+.link-icon:hover{transform:scale(1.1)}
+
+.divider{display:flex;margin-top:10px;margin-bottom:33px}
+.divider-inner{display:flex;flex-wrap:nowrap;gap:10px;width:100%;box-sizing:border-box}
+
+.views-box{justify-content:left;display:flex;bottom:12px;position:absolute;align-items:center;gap:13px;left:3px}
+.views-inner{position:absolute;bottom:12px;left:15px}
+.views-inner span{display:flex;align-items:center;color:var(--textColor)}
+.views-inner span svg{font-size:19px;margin-right:5px}
+.views-wrap .views-inner{position:static!important;top:inherit!important;bottom:inherit!important;left:inherit!important}
+
+.tip-trigger{position:relative;display:inline-flex;align-items:center;justify-content:center}
+.tip-content{position:fixed;z-index:99999999;top:0;left:0;padding:.3rem .7rem;border-radius:15px;font-size:.9rem;line-height:1.3;color:#fafafa;background:rgba(20,20,20,0.55);border:2px solid rgba(26,26,26,0.2);box-shadow:0 20px 45px rgba(0,0,0,.45);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);pointer-events:none;opacity:0;width:max-content;max-width:260px;text-align:center;transform:scale(.94);transition:opacity .13s ease,transform .21s cubic-bezier(.16,1,.3,1)}
+
+@keyframes bounce-anim{0%,100%{transform:rotate(45deg) translate(0)}50%{transform:rotate(45deg) translate(4px,4px)}}
+
+.aurora-container,.dither-container,.plasma-container{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+@media(max-width:640px){
+  .card{--containerWidth:100%!important;--containerPadding:16px!important;--containerRadius:14px!important}
+  .profile-row{flex-direction:column!important;text-align:center!important;gap:6px!important}
+  .avatar{margin-right:0!important;height:90px!important;font-size:4em!important}
+  .text-col{align-items:center!important}
+  .header-row{justify-content:center!important}
+  .text-col h1{font-size:28px!important;line-height:32px!important}
+  .links-row{gap:6px!important}
+  .link-btn{width:40px!important;height:40px!important}
+}
