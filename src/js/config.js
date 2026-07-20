@@ -11,14 +11,14 @@ const CONFIG = {
   avatar: { type: "image", src: "src/assets/pfp.png" },
   bio: {
     typewriter: true,
-    texts: ["welcome to my page", "fishce", "link in bio", "vibe"],
+    texts: ["hi, im fishce", "connect with me", "digital creator", "fishce"],
     staticBio: "fishce",
     typeSpeed: 80,
     deleteSpeed: 50,
     pauseDuration: 2000,
   },
   joinedDate: "Joined recently",
-  badges: ["premium", "verified"],
+  badges: [],
   links: [
     { url: "https://www.tiktok.com/@fishceee", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/9d2293f2-2100-4a61-a2e6-dadfccac84f3.webp", color: "#ffffff" },
     { url: "https://www.threads.com/@fishce_", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/2db87780-3939-4c4c-a86f-86b069e69e18.webp", color: "#ffffff" },
