@@ -24,7 +24,6 @@ const CONFIG = {
     { url: "https://twitter.com/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/9d2293f2-2100-4a61-a2e6-dadfccac84f3.webp", color: "#ffffff" },
     { url: "https://discord.gg/fishce", icon: "https://raw.githubusercontent.com/6sfy/guns.lol/main/src/assets/icons/6ee3bfba-f672-41d5-9cb6-4c4b2fecc489.webp", color: "#dddddd" },
   ],
-  views: 0,
   audio: {
     src: "",
     title: "",

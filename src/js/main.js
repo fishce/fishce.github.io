@@ -388,15 +388,6 @@
     _registerAnimation(draw, 1);
   }
 
-  (function () {
-    var k = "forge_views_" + (CONFIG.username || "profile");
-    var stored = parseInt(localStorage.getItem(k), 10);
-    if (isNaN(stored)) stored = CONFIG.views || 0;
-    stored++;
-    localStorage.setItem(k, String(stored));
-    CONFIG.views = stored;
-  })();
-
   var isVideo = CONFIG.background.src && /\.(mp4|webm|ogg)$/i.test(CONFIG.background.src);
   var html;
   if (isVideo) {
@@ -422,7 +413,6 @@
   html += '<div class="divider"><div class="divider-inner"></div></div>';
   html += '<div class="links-section" style="margin-bottom:10px"><div class="links-row" style="justify-content:center">' + renderLinks() + "</div></div>";
   html += renderAbout() + renderPortfolio();
-  html += '<div class="views-box views-wrap"><div class="views-inner"><span class="tip-trigger"><span style="font-weight:550;font-size:14px;display:flex;align-items:center;gap:4px"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg> ' + CONFIG.views + '</span><span class="tip-content" style="--tooltip-max-width:260px;border-color:#1a1a1a33;background-color:#14141463;" data-visible="false" data-placement="top">Profile Views</span></span></div></div>';
   html += "</div></div></div></div></div>";
 
   document.body.innerHTML = html;
