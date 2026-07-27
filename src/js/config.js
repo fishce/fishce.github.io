@@ -25,7 +25,7 @@ window.CONFIG = {
     { url: "https://www.threads.com/@fishce_", icon: "src/assets/icons/threads.png", color: "#ffffff" },
     { url: "https://www.facebook.com/not.asuwaa", icon: "src/assets/icons/facebook.svg", color: "#ffffff" },
     { url: "https://www.instagram.com/fishce_", icon: "src/assets/icons/instagram.svg", color: "#ffffff" },
-    { url: "https://steamcommunity.com/id/asuwwaa/", icon: "src/assets/icons/steam.svg", color: "#ffffff" },
+    { url: "https://steamcommunity.com/id/asuwwaa/", icon: "src/assets/icons/steam.png", color: "#ffffff" },
     { url: "https://github.com/fishce", icon: "src/assets/icons/github.svg", color: "#ffffff" },
   ],
   textLinks: [
