@@ -53,8 +53,8 @@ video.bg-image{object-fit:cover}
 .link-btn a{display:flex}
 .link-icon{height:40px;width:40px;object-fit:cover;transition:transform .25s}
 .link-icon:hover{transform:scale(1.15)}
-.link-icon[src*="steam"]{transform:scale(1.35);object-fit:contain}
-.link-icon[src*="steam"]:hover{transform:scale(1.55)}
+.link-icon[src*="steam"]{transform:scale(1.2);object-fit:contain}
+.link-icon[src*="steam"]:hover{transform:scale(1.35)}
 
 .divider{display:flex;margin-top:5px;margin-bottom:8px}
 .divider-inner{display:flex;flex-wrap:nowrap;gap:10px;width:100%;box-sizing:border-box}
